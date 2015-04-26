@@ -29,7 +29,8 @@
 3. On va itérer sur les différents secteurs et appliquer la fonction de déchiffrement sur chacun d'eux.
 
 ## Exercice 3
-1.  * Version du certificat
+1.  
+    * Version du certificat
     * Numéro de série
     * Emetteur
     * Période de validité
@@ -40,21 +41,32 @@
 4. Il garantit la confidentialité et l'intégrité des échanges.
 
 ## Exercice 4 **Correction par Quentin <3**
-1.  * La machine de PIN Mailing
+1.  
+    * La machine de PIN Mailing
     * Le Back Office
     * La machine de PIN Mailing
-2.  * SAA
+2.  
+    * SAA
     * SAE
     * L'interface bancaire du réseau e-RSB
-3.  * Transhiffrement du PIN
-4.  * Vérification du PIN
-5.  * Génération du PIN
-6.  * Calcul de l'ARPC
+3.  
+    * Transhiffrement du PIN
+4.  
+    * Vérification du PIN
+5.  
+    * Génération du PIN
+6.  
+    * Calcul de l'ARPC
     * Vérification de l'IDN
-7.  * Dérivation des clés maître Emetteur EMV
-8.  * Calcul de l'IDN
-9.  * Générer des clés
+7.  
+    * Dérivation des clés maître Emetteur EMV
+8.  
+    * Calcul de l'IDN
+9.  
+    * Générer des clés
     * Effectuer des calculs cryptographiques
     * Permettre l'échange de clés symétriques tirées dynamiquement
-10. * Trois
-11. * Clé KTK
+10.
+    * Trois
+11.
+    * Clé KTK

@@ -1,7 +1,7 @@
 # [Web 2.0] Notes de cours
 
 ## Les cookies
-Les coockies permettent de stocker des informations chez le client. Les cookies sont renvoyés automatiquement par l'utilisateur lors des connexions futures.
+Les cookies permettent de stocker des informations chez le client. Les cookies sont renvoyés automatiquement par l'utilisateur lors des connexions futures.
 
 ### Comment les utiliser
 On peut les utiliser dans différents cas :

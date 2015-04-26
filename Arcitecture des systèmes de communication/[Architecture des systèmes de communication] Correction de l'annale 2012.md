@@ -18,14 +18,16 @@
 
 ## _Partie 2_
 
-1.  1. étoile
-    2. maillée
+1.  
+  1. étoile
+  2. maillée
 2. IETF (*Internet Engineering Task Force*)
-3.  1. Terminal
-    2. Noeuds d'accès
-    3. Noeud local
-    4. Noeud régional et/ou national
-    5. Noeud International
+3.  
+  1. Terminal
+  2. Noeuds d'accès
+  3. Noeud local
+  4. Noeud régional et/ou national
+  5. Noeud International
 4. CT (Commutateur de Transit)
 5. 1 car *300 à 3400* est la seule bande audible
 6. 1

@@ -1,4 +1,4 @@
-# [TP J2EE] Snippets
+# [TP J2E] Snippets
 
 ## Connexion et deconnexion à une base de données
 ```java

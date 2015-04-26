@@ -1,5 +1,5 @@
 # [Principes de la montétique] Correction de l'annale 2012-2013
-** Correction fusionnée avec celle de Quentin <3**
+**Correction fusionnée avec celle de Quentin <3**
 
 ## _Question A_
 * DAB : Distributeur automatique de billets

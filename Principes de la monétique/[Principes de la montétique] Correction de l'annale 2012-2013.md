@@ -1,4 +1,4 @@
-# [Principe de la montétique] Correction de l'annale 2012-2013
+# [Principes de la montétique] Correction de l'annale 2012-2013
 ** Correction fusionnée avec celle de Quentin <3**
 
 ## _Question A_

@@ -25,11 +25,11 @@ public void init() throws DaoException {
 }
 
 public void destroy(){
-   try {
-     st1.close();
-     st2.close();
-     st3.close();
-     st4.close();
+  try {
+    st1.close();
+    st2.close();
+    st3.close();
+    st4.close();
     connection.close();
   } catch( Exception e ) {
     System.err.println("Problème de fermeture de la connexion à la base de données");

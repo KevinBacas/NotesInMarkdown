@@ -24,4 +24,8 @@ void complexe_sub_sse2(const double a[2], const double b[2], const double res[2]
 | 17 | a[1]xb[1]+a[0]xb[0] \ a[1]xb[0]+a[1]xb[1] | a[1]xb[1] \ a[1]xb[0] | a[0]xb[0]-a[1]xb[1] \ a[1]xb[1]-a[1]xb[0] |
 | 18 | a[0]xb[0]-a[1]xb[1] \ a[1]xb[0]+a[1]xb[1] | a[1]xb[1] \ a[1]xb[0] | a[0]xb[0]-a[1]xb[1] \ a[1]xb[1]-a[1]xb[0] |
 
-### 1.3
+### 1.3 (3 points)
+**La flemme**
+
+## 2 Tableaux (12 points)
+### 2.1 (3 points)

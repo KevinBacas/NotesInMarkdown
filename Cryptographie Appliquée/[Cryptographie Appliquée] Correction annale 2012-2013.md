@@ -37,7 +37,7 @@
     * Nom et informations au sujet de la clé publique du sujet
     * Nom de l'algorithme utilisant cette clé publique
 2. Dans ce cas, l'utilisation d'un certificat va servir à identifier une carte, être sûr que c'est bien la bonne et réaliser l'authentification en étant sûr du demandeur.
-3. L'autorité de certification.
+3. Tous les points d'acceptation de la carte (Les terminaux).
 4. Il garantit la confidentialité et l'intégrité des échanges.
 
 ## Exercice 4 **Correction par Quentin <3**

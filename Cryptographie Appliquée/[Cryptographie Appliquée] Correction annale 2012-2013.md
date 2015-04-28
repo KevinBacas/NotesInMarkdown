@@ -64,7 +64,7 @@
 9.  
     * Générer des clés
     * Effectuer des calculs cryptographiques
-    * Permettre l'échange de clés symétriques tirées dynamiquement
+    * Contrôler et faire respecter l'usage des clés
 10.  
     * Trois
 11.  

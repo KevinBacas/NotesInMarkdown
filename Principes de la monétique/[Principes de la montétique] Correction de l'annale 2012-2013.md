@@ -11,6 +11,7 @@
 ## _Question B_
 Un paiement à distance est un paiement qui est réalisé sans que le commerçant ne voit le porteur et la carte. (e.g. Les paiements sur internet)
 > Tous les paiements qui ne se font pas avec un TPE
+
 > **By Quentin**
 
 ## _Question C_ **verification Quentin**

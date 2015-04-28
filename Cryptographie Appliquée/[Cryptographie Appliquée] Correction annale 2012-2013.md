@@ -65,7 +65,7 @@
     * Générer des clés
     * Effectuer des calculs cryptographiques
     * Permettre l'échange de clés symétriques tirées dynamiquement
-10.
+10.  
     * Trois
-11.
+11.  
     * Clé KTK

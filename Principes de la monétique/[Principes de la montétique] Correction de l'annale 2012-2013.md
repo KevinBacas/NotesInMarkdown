@@ -92,7 +92,7 @@ Le code PIN de la carte est stocké *à l'intérieur de la carte sous forme chif
 * Non
 * Non
 * Non
-* Non
+* Oui
 * Oui
 * Non
 * Non

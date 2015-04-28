@@ -42,7 +42,6 @@
 
 ## Exercice 4 **Correction par Quentin <3**
 1.  
-    * La machine de PIN Mailing
     * Le Back Office
     * La machine de PIN Mailing
 2.  

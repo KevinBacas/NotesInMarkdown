@@ -203,13 +203,13 @@ function recevoirListeProduits(req)
       var first_element = true;
       for (var i = tab.length - 1; i >= 0; i--) {
         var option = document.createElement("option");
-        option.setAttribute("value",  tab[i].getNamedItem("ref").value);
-        var option_label = document.createTextNode(tab[i].getNamedItem("des").value);
+        option.setAttribute("value",  tab[i].getElementsByTagName("ref")[0].textContent);
+        var option_label = document.createTextNode(tab[i].getElementsByTagName("des")[0].textContent);
 
         if(first_element)
         {
           option.setAttribute("selected", true);
-          envoyerRequeteProduit(tab[i].getNamedItem("ref").value);
+          envoyerRequeteProduit(tab[i].getElementsByTagName("ref")[0].textContent);
           first_element = false;
         }
 

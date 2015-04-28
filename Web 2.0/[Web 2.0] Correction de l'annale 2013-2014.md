@@ -13,7 +13,7 @@ if(isset($_GET['ca_id']) && !empty($_GET['ca_id']))
   $conn = connexion();
   $query = "SELECT * FROM PRODUIT WHERE ca_id=$id";
   // Execution de la requète
-  $res = pg_query($conn, $query);
+  $res = pg_query($conn, $query) or die("QQ");
   // On ferme la connexion à la base de données
   pg_close($conn);
 
@@ -58,7 +58,7 @@ if(isset($_GET['pr_id']) && !empty($_GET['pr_id']))
   $conn = connexion();
   $query = "SELECT pr_prix FROM PRODUIT WHERE pr_id=$id";
   // Execution de la requète
-  $res = pg_query($conn, $query);
+  $res = pg_query($conn, $query) or die("QQ");;
   // On ferme la connexion à la base de données
   pg_close($conn);
 
@@ -126,13 +126,13 @@ function recevoirListeProduits(req)
       var first_element = true;
       for (var i = tab.length - 1; i >= 0; i--) {
         var option = document.createElement("option");
-        option.setAttribute("value",  tab[i].getNamedItem("ref").value);
-        var option_label = document.createTextNode(tab[i].getNamedItem("des").value);
+        option.setAttribute("value",  tab[i].getElementsByTagName("ref")[0].textContent);
+        var option_label = document.createTextNode(tab[i].getElementsByTagName("des")[0].textContent);
 
         if(first_element)
         {
           option.setAttribute("selected", true);
-          envoyerRequeteProduit(tab[i].getNamedItem("ref").value);
+          envoyerRequeteProduit(tab[i].getElementsByTagName("ref")[0].textContent);
           first_element = false;
         }
 

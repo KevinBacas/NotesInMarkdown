@@ -221,4 +221,65 @@ function recevoirListeProduits(req)
 }
 ```
 
+## Ecriture dans un fichier
+### Exemple du compteur
+```php
+<?php
+function compteur($filename){
+
+    // Si le fichier n'existe pas
+    if(!file_exists($filename)){
+        // On créer le fichier
+        $file = fopen($filename, "w");
+        // On écrit 0
+        fwrite($file, "0");
+        // On ferme la ressource
+        fclose($file);
+    }
+
+    // Lecture du fichier
+    $file = file($filename);
+    // On récupère la valeur du compteur
+    $number = $file[0];
+
+    $cookie_name = "compteur";
+    if(!isset($_COOKIE[$cookie_name])){
+        // On incrémente le compteur
+        $number++;
+        // On place un cookie qui dure 24h
+        setcookie($cookie_name, "QQ", time() + 3600);
+        // On écrit la nouvelle valeur dans le fichier
+        $file = fopen($filename, "w");
+        fwrite($file, $number);
+        fclose($file);
+    }
+
+    // On retourne la valeur incrémentée
+    return $number;
+}
+?>
+```
+
+## Les requètes SQL
+### Lancer une requète
+```php
+<?php
+$connection = pg_connect("host=$host dbname=$dbname user=$login password=$pass") or die ("Connexion à la base impossible !");
+$query = <<<SQL
+  SELECT code, nom, prenom
+  FROM   auteurs
+  WHERE  nom like '%$debnom%'
+SQL;
+$res = pg_query($connection, $query) or die("Requète impossible !");
+pg_close($connection);
+?>
+```
+
+### Récupérer les données sous forme de tableau
+```php
+<?php
+$line = pg_fetch_array($res);
+?>
+```
+
 **TODO : liste des fonctions principales DOM**

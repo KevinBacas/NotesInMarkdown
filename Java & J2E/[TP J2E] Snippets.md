@@ -1,6 +1,6 @@
 # [TP J2E] Snippets
-
 ## Connexion et deconnexion à une base de données
+
 ```java
 public void init() throws DaoException {
   try {
@@ -35,6 +35,7 @@ public void destroy(){
 ```
 
 ## Utilisation de PreparedStatement
+
 ```java
 @Override
 public Eleve getOne(int id) {
@@ -65,6 +66,7 @@ public Eleve getOne(int id) {
 ```
 
 ## Execution d'une requète SQL
+
 ```java
 @Override
 public Collection<Eleve> getAll() {
@@ -93,9 +95,10 @@ public Collection<Eleve> getAll() {
 ```
 
 ## Différence executeQuery() et executeUpdate()
-*executeQuery()* attend une réponse de la requète alors que *executeUpdate()* n'attend rien. Pour toutes les requètes sans résultat il faut alors faire *executeUpdate()*. Par exemple : *UPDATE* et *DELETE*.
+_executeQuery()_ attend une réponse de la requète alors que _executeUpdate()_ n'attend rien. Pour toutes les requètes sans résultat il faut alors faire _executeUpdate()_. Par exemple : _UPDATE_ et _DELETE_.
 
 ## Tests unitaire
+
 ```java
 public void test() {
   Date date = null;
@@ -126,6 +129,7 @@ public void test() {
 ```
 
 ## Gestion de l'URL
+
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -204,20 +208,20 @@ public void doValidateEleve(HttpServletRequest request, HttpServletResponse resp
 }
 ```
 
-
 ## Spring
 ### student-postgres.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DD SQL MAP 2.0//EN"
-			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+            "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap>
     <!-- alias class [Student] -->
     <typeAlias alias="Student.class" type="ensicaen.obo.mvc.entities.Student"/>
     <!-- mapping table [STUDENT] - objet [Eleves] -->
     <resultMap id="Student.map" class="Student.class">
         <result property="id" column="ID"/>
-		<result property="version" column="VERSION"/>
+        <result property="version" column="VERSION"/>
         <result property="name" column="NAME"/>
         <result property="firstname" column="FIRSTNAME"/>
         <result property="birthdate" column="BIRTHDATE"/>
@@ -233,41 +237,43 @@ public void doValidateEleve(HttpServletRequest request, HttpServletResponse resp
     <select id="Student.getOne" parameterClass="int" resultMap="Student.map">
         SELECT * FROM rpereira.student WHERE ID=#value#
     </select>
-	<!-- ajouter un eleve -->
-	<insert id="Student.insertOne" parameterClass="Student.class">
-	   <selectKey keyProperty="id">
-	        SELECT nextval('rpereira.seq_eleves') AS value
-	    </selectKey>
-	    INSERT INTO rpereira.student VALUES(#id#,#version#,#name#,#firstname#,#birthdate#,#redoublers#,#year#,#branch#);
-	</insert>
-	<!-- mettre à jour un eleve -->
-	<insert id="Student.updateOne" parameterClass="Student.class">
-	    UPDATE rpereira.student set VERSION=VERSION+1, NAME=#name#, FIRSTNAME=#firstname#, BIRTHDATE=#birthdate#, REDOUBLER=#redoublers#, YEAR=#year#, BRANCH=#branch# WHERE ID=#id#
-	</insert>
-	<!-- supprimer un eleve -->
-	<insert id="Student.deleteOne" parameterClass="int">
-	    DELETE FROM rpereira.student where ID=#value#
-	</insert>
+    <!-- ajouter un eleve -->
+    <insert id="Student.insertOne" parameterClass="Student.class">
+       <selectKey keyProperty="id">
+            SELECT nextval('rpereira.seq_eleves') AS value
+        </selectKey>
+        INSERT INTO rpereira.student VALUES(#id#,#version#,#name#,#firstname#,#birthdate#,#redoublers#,#year#,#branch#);
+    </insert>
+    <!-- mettre à jour un eleve -->
+    <insert id="Student.updateOne" parameterClass="Student.class">
+        UPDATE rpereira.student set VERSION=VERSION+1, NAME=#name#, FIRSTNAME=#firstname#, BIRTHDATE=#birthdate#, REDOUBLER=#redoublers#, YEAR=#year#, BRANCH=#branch# WHERE ID=#id#
+    </insert>
+    <!-- supprimer un eleve -->
+    <insert id="Student.deleteOne" parameterClass="int">
+        DELETE FROM rpereira.student where ID=#value#
+    </insert>
 </sqlMap>
 ```
 
 ### sql-map-config-postgres.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
-			"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+            "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>
     <sqlMap resource="student-postgres.xml"/>
 </sqlMapConfig>
 ```
 
 ### spring-config.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<beans 	xmlns="http://www.springframework.org/schema/beans"
-    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    	xsi:schemaLocation="http://www.springframework.org/schema/beans
-       	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+<beans     xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <!-- la class dao -->
     <bean id="dao" class="ensicaen.obo.mvc.dao.DaoImpl" init-method="init" destroy-method="destroy"/>
     <!-- la class service -->
@@ -304,22 +310,22 @@ public void doValidateEleve(HttpServletRequest request, HttpServletResponse resp
     </bean>
     <!-- service 2.0  -->
     <bean id="serviceCommon" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-       	<property name="transactionManager">
-       	    <ref local="transactionManager"/>
-       	</property>
-      	<property name="target">
-           	<bean class="ensicaen.obo.mvc.service.ServiceImpl">
-		   		<property name="daoCommon">
-		           <ref local="daoCommon"/>
-		       </property>
+           <property name="transactionManager">
+               <ref local="transactionManager"/>
+           </property>
+          <property name="target">
+               <bean class="ensicaen.obo.mvc.service.ServiceImpl">
+                   <property name="daoCommon">
+                   <ref local="daoCommon"/>
+               </property>
            </bean>
-       	</property>
-       	<property name="transactionAttributes">
-       	    <props>
-       	        <prop key="saveMany">PROPAGATION_REQUIRED</prop>
-       	        <prop key="deleteMany">PROPAGATION_REQUIRED</prop>
-       	    </props>
-       	</property>
+           </property>
+           <property name="transactionAttributes">
+               <props>
+                   <prop key="saveMany">PROPAGATION_REQUIRED</prop>
+                   <prop key="deleteMany">PROPAGATION_REQUIRED</prop>
+               </props>
+           </property>
     </bean>
 </beans>
 ```

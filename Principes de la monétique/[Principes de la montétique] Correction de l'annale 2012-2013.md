@@ -2,28 +2,29 @@
 **Correction fusionnée avec celle de Quentin <3**
 
 ## _Question A_
-* DAB : Distributeur automatique de billets
-* GAB : Guichet automatique de banque
-* TPE : Terminal de paiement életronique
-* DAC : Distributeur Automatique de Carburant
-* HSM : Hardware Security Module
+- DAB : Distributeur automatique de billets
+- GAB : Guichet automatique de banque
+- TPE : Terminal de paiement életronique
+- DAC : Distributeur Automatique de Carburant
+- HSM : Hardware Security Module
 
 ## _Question B_
 Un paiement à distance est un paiement qui est réalisé sans que le commerçant ne voit le porteur et la carte. (e.g. Les paiements sur internet)
+
 > Tous les paiements qui ne se font pas avec un TPE
 
 > **By Quentin**
 
 ## _Question C_ **verification Quentin**
-* Oui
-* Oui
-* Oui (*cf slide 34*)
-* Oui (*cf slide 34*)
-* Oui (*cf slide 32*)
-* Non (*C'est la banque émettrice*)
-* Oui (*cf slide 32*)
-* Oui (*cf slide 33*)
-* Non (*Emis par l'emetteur et signé par l'utilisateur*)
+- Oui
+- Oui
+- Oui (_cf slide 34_)
+- Oui (_cf slide 34_)
+- Oui (_cf slide 32_)
+- Non (_C'est la banque émettrice_)
+- Oui (_cf slide 32_)
+- Oui (_cf slide 33_)
+- Non (_Emis par l'emetteur et signé par l'utilisateur_)
 
 ## _Question D_ (**Slides 20-25**)
 1. Banque émettrice
@@ -38,65 +39,65 @@ Un paiement à distance est un paiement qui est réalisé sans que le commerçan
 10. TPE/DAB
 
 ## _Question E_
-Afin de concilier anonymat et traçabilité, qui sont *deux caractéristiques antagonistes*, les banques utilisent une *astuce législative* en disant qu'ils ont la traçabilité de la carte (*On sait quelle carte réalise une transaction*) mais *sans jamais prouver qui a utilisé la carte*. Ceci donne ainsi l'anonymat de l'utilisateur.
+Afin de concilier anonymat et traçabilité, qui sont _deux caractéristiques antagonistes_, les banques utilisent une _astuce législative_ en disant qu'ils ont la traçabilité de la carte (_On sait quelle carte réalise une transaction_) mais _sans jamais prouver qui a utilisé la carte_. Ceci donne ainsi l'anonymat de l'utilisateur.
 
 ## _Question F_
-Le cryptogramme CVx2 se trouve *à l'arrière de la carte* et se compose généralement de *3 chiffres*. Il est utilisé généralement dans les *paiements en ligne ou autrement dit à distance*.
+Le cryptogramme CVx2 se trouve _à l'arrière de la carte_ et se compose généralement de _3 chiffres_. Il est utilisé généralement dans les _paiements en ligne ou autrement dit à distance_.
 
 ## _Question G_ (*cf slide 66*)
-* Oui
-* Oui
-* Oui
-* Oui
-* Non
-* Non
-* Non
+- Oui
+- Oui
+- Oui
+- Oui
+- Non
+- Non
+- Non
 
 ## _Question I_
-* *0.077* (Slide 128 en tout petit en bas)
-* *130* (Slide 128 en tout petit en bas)
-* *1 900 000 000* (puisque 2.637 Milliards fin 2013 #estimation)
-* *100%* (Slide 89)
+- _0.077_ (Slide 128 en tout petit en bas)
+- _130_ (Slide 128 en tout petit en bas)
+- _1 900 000 000_ (puisque 2.637 Milliards fin 2013 #estimation)
+- _100%_ (Slide 89)
 
 ## _Question J_
-Un HSM offre des *fonctions cryptographiques* et est considéré comme inviolable. Il offre des services comme la *génération*, le *stockage* et la *protection des clés cryptographiques*.
+Un HSM offre des _fonctions cryptographiques_ et est considéré comme inviolable. Il offre des services comme la _génération_, le _stockage_ et la _protection des clés cryptographiques_.
 
 ## _Question K_
-1. Le *TPE* ou le *DAB*.
-2. L'autorisation consiste à *vérifier* si le *porteur* a *le droit d'effectuer ou non une transaction*.
-3. C'est un *type particulier d'autorisation* qui est utilisé dans quand on ne *connait pas à l'avance le montant de l'achat*. Dans ce cas on *demande une somme maximale* et on *réalise le paiement par la suite* (avec le vrai montant qui doit donc être inférieur à la demande). C'est le cas pour les *DAC*.
+1. Le _TPE_ ou le _DAB_.
+2. L'autorisation consiste à _vérifier_ si le _porteur_ a _le droit d'effectuer ou non une transaction_.
+3. C'est un _type particulier d'autorisation_ qui est utilisé dans quand on ne _connait pas à l'avance le montant de l'achat_. Dans ce cas on _demande une somme maximale_ et on _réalise le paiement par la suite_ (avec le vrai montant qui doit donc être inférieur à la demande). C'est le cas pour les _DAC_.
 
 ## _Question L_
-Ce projet se nomme *SEPA* pour *Single Euro Payments Area*.
+Ce projet se nomme _SEPA_ pour _Single Euro Payments Area_.
 
 ## _Question M_
-Le code PIN de la carte est stocké *à l'intérieur de la carte sous forme chiffrée*.
+Le code PIN de la carte est stocké _à l'intérieur de la carte sous forme chiffrée_.
 
 ## _Question N_
-* Oui
-* Non
-* Oui *en 1969 par Rolan Moreno*
-* Oui
-* Non
-* Non
-* Non
-* Oui
-* Non
-* Non
-* Non
-* Oui
-* Oui
-* Non
-* Non
-* Non
-* Non
-* Non
-* Non
-* Oui
-* Oui
-* Non
-* Non
-* Oui
-* Non
-* Oui
-* Non (*cf slide 58*)
+- Oui
+- Non
+- Oui _en 1969 par Rolan Moreno_
+- Oui
+- Non
+- Non
+- Non
+- Oui
+- Non
+- Non
+- Non
+- Oui
+- Oui
+- Non
+- Non
+- Non
+- Non
+- Non
+- Non
+- Oui
+- Oui
+- Non
+- Non
+- Oui
+- Non
+- Oui
+- Non (_cf slide 58_)

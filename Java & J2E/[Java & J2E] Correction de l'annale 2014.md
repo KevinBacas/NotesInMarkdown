@@ -1,5 +1,4 @@
 # [Java & J2E] Correction de l'annale 2014
-
 ## Question 4 :
 
 ```java
@@ -63,25 +62,28 @@ public class PassagerDAO extends AbstractionDataBaseDAO {
 ```
 
 ## Question 5 :
-La fonction loadPassager renvoie potentiellement une exception de type SQLException.
-Il faut alors donc la traiter soit en la mettant dans un bloc try/catch ou en ajoutant "throws SQLException" à la déclaration de le fonction appelante.
+La fonction loadPassager renvoie potentiellement une exception de type SQLException. Il faut alors donc la traiter soit en la mettant dans un bloc try/catch ou en ajoutant "throws SQLException" à la déclaration de le fonction appelante.
 
 ## Question 6 :
 ### Ligne 33
+
 ```java
 String id = request.getParameter("id");
 ```
->On pourrait faire les tests fondamentaux consistants à savoir si l'attribut est présent et non vide.
+
+> On pourrait faire les tests fondamentaux consistants à savoir si l'attribut est présent et non vide.
 
 ### Ligne 36
+
 ```java
 request.setAttribute("passager", p);
 getServletContext().getRequestDispatcher("Billets.jsp").forward(request, response);
 ```
-> On le sauvegarde ici car on ne veut pas le faire dans la base de données.
-> De plus cet objet a une durée de vie très limitée. Le passage par contexte suffit donc amplement.
+
+> On le sauvegarde ici car on ne veut pas le faire dans la base de données. De plus cet objet a une durée de vie très limitée. Le passage par contexte suffit donc amplement.
 
 ### Ligne 40
+
 ```java
 request.setAttribute("Erreur", "Erreur, le passager n'existe pas");
 getServletContext().getRequestDispatcher("accueil.jsp").forward(request, response);
@@ -92,10 +94,10 @@ getServletContext().getRequestDispatcher("accueil.jsp").forward(request, respons
 Il faut transmettre à la fois l'identifiant du vol, la date de départ et le passager car deux vols peuvent avoir le même id.
 
 ### b)
-Pour pouvoir y accéder et les manipuler plus simplement dans le code.
-**(Je n'ai pas compris la question alors je suis possiblement à côté de la plaque..)**
+Pour pouvoir y accéder et les manipuler plus simplement dans le code. **(Je n'ai pas compris la question alors je suis possiblement à côté de la plaque..)**
 
 ## Question 8 :
+
 ```html
 <%@ taglib uri="cjstl" prefix="c" %>
 <jsp:useBean id="passager" scope="request" >

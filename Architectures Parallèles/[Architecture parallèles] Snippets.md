@@ -1,6 +1,6 @@
 # [Architectures parallèles] Snippets
-
 ## OpenMP
+
 ```cpp
 template< typename InputIterator, typename UnaryPredicate >
 static typename std::iterator_traits< InputIterator >::difference_type
@@ -253,6 +253,7 @@ return acc;
 ```
 
 ## TBB
+
 ```cpp
 /**
  * Implémentation parallèle.
@@ -357,6 +358,7 @@ const int& threads) {
 ```
 
 ### Pipeline logiciel
+
 ```cpp
 /**
  * Implémentation pipeline de l'algorithme du bubble sort.

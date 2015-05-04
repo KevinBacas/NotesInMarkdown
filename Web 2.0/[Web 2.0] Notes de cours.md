@@ -1,17 +1,17 @@
 # [Web 2.0] Notes de cours
-
 ## Les cookies
 Les cookies permettent de stocker des informations chez le client. Les cookies sont renvoyés automatiquement par l'utilisateur lors des connexions futures.
 
 ### Comment les utiliser
 On peut les utiliser dans différents cas :
-* Identifier une personne
-* Implémenter la notion de panier (*Vue en TP*)
-* Personnaliser des applications
-* Calculer des profils d'utilisateurs (*Google ads*)
-* Calculter des statistiques sur des pages (*Google analytics*)
+- Identifier une personne
+- Implémenter la notion de panier (_Vue en TP_)
+- Personnaliser des applications
+- Calculer des profils d'utilisateurs (_Google ads_)
+- Calculter des statistiques sur des pages (_Google analytics_)
 
 ### En PHP
+
 ```php
 <?php
   // On place un cookie nommé "seen" avec la valeur "yes"
@@ -38,6 +38,7 @@ On peut les utiliser dans différents cas :
 ```
 
 ### En Javascript
+
 ```javascript
 var seen=true;
 if((document.cookie.length==0)||(document.cookie.indexOf("seen=")==-1)) {
@@ -56,6 +57,7 @@ if(seen) {
 
 #### Quelques fonctions utiles
 **Lecture, écriture de Cookies en Javascript**
+
 ```javascript
 function createCookie(name,value,days,hours) {
   if (days||hours) {
@@ -90,6 +92,7 @@ function eraseCookie(name) {
 
 ## Les sessions en PHP
 ### Démarrage d'une session
+
 ```php
 <?php
   session_start();
@@ -97,6 +100,7 @@ function eraseCookie(name) {
 ```
 
 ### Fin de sessions
+
 ```php
 <?php
   // Initialize the session.
@@ -118,9 +122,10 @@ function eraseCookie(name) {
 ```
 
 ## AJAX
-AJAX (*Asynchronous Javascript and Xml*) est une méthode permettant d'*interroger un serveur http à partir d'un navigateur et du language Javascript*. Son avantage est de permettre une plus grande flexibilité de l'interface par rapport au web classique.
+AJAX (_Asynchronous Javascript and Xml_) est une méthode permettant d'_interroger un serveur http à partir d'un navigateur et du language Javascript_. Son avantage est de permettre une plus grande flexibilité de l'interface par rapport au web classique.
 
 ### Exemple
+
 ```javascript
 function sendRequest(url)
 {
@@ -147,6 +152,7 @@ function sendRequest(url)
 ```
 
 ### Appel Asynchrone
+
 ```javascript
 function sendRequest(url)
 {
@@ -163,6 +169,7 @@ function sendRequest(url)
 ```
 
 ### Passage par méthode POST
+
 ```javascript
 function postRequestWithParam(url, param)
 {
@@ -183,6 +190,7 @@ function postRequestWithParam(url, param)
 Permet de manipuler ou explorer l'arbre d'un document XML.
 
 ### Exemple
+
 ```javascript
 function recevoirListeProduits(req)
 {
@@ -223,6 +231,7 @@ function recevoirListeProduits(req)
 
 ## Ecriture dans un fichier
 ### Exemple du compteur
+
 ```php
 <?php
 function compteur($filename){
@@ -262,6 +271,7 @@ function compteur($filename){
 
 ## Les requètes SQL
 ### Lancer une requète
+
 ```php
 <?php
 $connection = pg_connect("host=$host dbname=$dbname user=$login password=$pass") or die ("Connexion à la base impossible !");
@@ -276,6 +286,7 @@ pg_close($connection);
 ```
 
 ### Récupérer les données sous forme de tableau
+
 ```php
 <?php
 $line = pg_fetch_array($res);

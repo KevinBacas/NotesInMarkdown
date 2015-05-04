@@ -1,12 +1,10 @@
 # [Architecture des système de communication] Cours sur le Réseau 4G LTE (by RT)
-
 Norme : IETF (Internet Engineering Task Force)
 
 ## 2G:
 - GSM : Global System for Mobile
 - GPRS : General Packet Radio Service
 - EDGE : Enheanced Data for Global Evolution
-
 
 ## 3G :
 - UMTPS : Universal Mobile Telecommunication System
@@ -18,14 +16,14 @@ Norme : IETF (Internet Engineering Task Force)
 EPS : Evolved Packet System
 
 _Nouvelles techniques de modulation de fréquence_
-* OFDMA
-* SC-FDMA
+- OFDMA
+- SC-FDMA
 
 **3 fois plus élevé que HSPA**
 
 _Principales caractéristiques de LTE_
-* Connexion IP permanente
-* Partie circuit qui disparait
+- Connexion IP permanente
+- Partie circuit qui disparait
 
 **Plus de communication par voix/SMS :(**
 
@@ -47,13 +45,14 @@ _Au niveau de son architecture, LTE ajoute :_
 ## ePC/SAE :
 - MME : Mobility Manegement Entity
   - Gère le plan de contrôle (signalisation).
+
 - Serving Gateway :
   - Gère le plan de trafic (gère les antennes selon les déplacements).
+
 - PDN-Gateway :
   - Gère le plan de trafic et la connection vers les réseaux IP (routeur)
 
 ## Téléphonie sur IP
-
 Architecture téléphonique : On a ajouté au réseau de téléphonie analogique une Passerelle qui permet de faire le lien entre réseau IP et analogique (RTC)
 
 _RTP : Real Time Protocol_
@@ -69,14 +68,14 @@ _H.323 :_
 
 _SIP: Session Initiation Protocol_
 - Source d'inspiration internet
-- Utilise l’architecture et les protocoles IP existants
+- Utilise l'architecture et les protocoles IP existants
 - Standardisé par l'IETF
-SIP permet de créer, modifier et terminer des sessions avec un ou plusieurs participants.
-Les sessions peuvent être vidéos, jeux, médias, etc.. Indépendant de la couche transport, contrôle de la couche application.
+- SIP permet de créer, modifier et terminer des sessions avec un ou plusieurs participants.
+- Les sessions peuvent être vidéos, jeux, médias, etc.. Indépendant de la couche transport, contrôle de la couche application.
 
 _Plusieurs éléments SIP :_
 - User Agent (Client-UAC et Serveur-UAS ), le client émet des requetes et le
-serveur traite les requêtes entreinte
+- serveur traite les requêtes entreinte
 - Registrer Server, enregistre les adresses des terminaux
 - Proxy Server, route les requêtes SIP
 - Redirect Server, retourne à l'appelant la nouvelle adresse de l'appelé
@@ -85,16 +84,12 @@ serveur traite les requêtes entreinte
 _Protocole :_
 1. Enregistrement, Demande d'appel -> SIP
 2. Négociation -> Protocole SDP
-
-
 - Avantage : Simple à mettre en œuvre, interopérabilité, gestion de la mobilité
 - Inconvénients : Deploiement en cours, pas si simple (dizaines RFC)
 
-_SIP-URI :_
-Un SIP-URI est un système d’adressage SIP pour appeler une autre personne via SIP. En d’autres termes, un SIP-URI est le numéro de téléphone SIP d’un utilisateur. Le SI- URI ressemble à une adresse email et se présente sous le format suivant :
-- SIP URI = sip:x@y:Port x=nom d’utilisateur et y=hôte (domaine ou IP)
+_SIP-URI :_ Un SIP-URI est un système d'adressage SIP pour appeler une autre personne via SIP. En d'autres termes, un SIP-URI est le numéro de téléphone SIP d'un utilisateur. Le SI- URI ressemble à une adresse email et se présente sous le format suivant :
+- SIP URI = sip:x@y:Port x=nom d'utilisateur et y=hôte (domaine ou IP)
 
-_SDP : Session Description Protocol_
-Permet de savoir quel type de médias c'est, protocole, format...
+_SDP : Session Description Protocol_ Permet de savoir quel type de médias c'est, protocole, format...
 - Toutes les informations du message
 - Les participants se mettent d'accord sur un même Sdp pour pouvoir communiquer (CODECS ...)

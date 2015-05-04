@@ -1,8 +1,7 @@
 # [Web 2.0] Correction de l'annale 2013-2014
-
 ## Question 1
-
 **getProduits.php**
+
 ```php
 <?php
 
@@ -46,8 +45,8 @@ else
 ```
 
 ## Question 2
-
 **getInfo.php**
+
 ```php
 <?php
 
@@ -83,9 +82,9 @@ else
 ```
 
 ## Question 3
-
 ### a)
 **envoyerRequeteListeProduits.js**
+
 ```javascript
 function envoyerListeProduits(idCateg)
 {
@@ -106,6 +105,7 @@ function envoyerListeProduits(idCateg)
 
 ### b)
 **recevoirListeProduits.js**
+
 ```javascript
 function recevoirListeProduits(req)
 {
@@ -145,9 +145,9 @@ function recevoirListeProduits(req)
 ```
 
 ## Question 4
-
 ### a)
 **envoyerRequeteProduit.js**
+
 ```javascript
 function envoyerRequeteProduit(idPdt)
 {
@@ -168,6 +168,7 @@ function envoyerRequeteProduit(idPdt)
 
 ### b)
 **recevoirInfoProduit.js**
+
 ```javascript
 function recevoirListeProduits(req)
 {

@@ -20,7 +20,26 @@ _The NFC Forum_ promotes the potential for _NFC-enabled devices_ to act as elect
 ## Mifare
 **MIFARE** is the **NXP Semiconductors-owned** trademark of a _series of chips widely used in contactless smart cards and proximity cards_. According to the producers, **10 billion smart card chips** and **150 million reader modules** have been sold. For the variants of MIFARE devices specivications, [check here](http://en.wikipedia.org/wiki/MIFARE#Variants).
 
-## Sources
+## Libnfc
+**Libnfc** is an **open source** Near Field Communication (NFC) **C library** that allows you to _communicate with NFC devices_. It is a **low level NFC SDK** and **Programmers API** released under the _GNU Lesser General Public License_ and provides developers a way to work at higher level of abstraction with the NFC hardware. All major operating systems are supported, including GNU/Linux, Mac OS X and Windows.
+
+## Resources
 - [Wikipedia NFC](http://en.wikipedia.org/wiki/Near_field_communication)
 - [Wikipedia MIFARE](http://en.wikipedia.org/wiki/MIFARE)
 - [NXP::MIFARE - Identification and security](http://www.nxp.com/products/identification_and_security/smart_card_ics/mifare_smart_card_ics/mifare_desfire/)
+- [NFC Tools](http://nfc-tools.org/index.php?title=Main_Page)
+- [Installing Libnfc](http://www.mobilefish.com/developer/libnfc/libnfc.html)
+
+## Stuff done
+- 05/05/2015
+  - Research
+  - Installed :
+    - MiInstalling TDM-GCC MinGW Compiler
+    - libusb-win32
+    - PCRE for Windows
+    - CMake
+    - Doxygen (not required)
+    - libnfc
+
+## TODO
+- [Configure NFC](http://www.mobilefish.com/developer/libnfc/libnfc.html#configure_libnfc)

@@ -31,3 +31,4 @@
 - Dimensions
 - Cut at the **end** or it can move
 - Recommended to edit SVG into Illustrator instead of into Visicut. **Illustrator has more possibilities**.
+- [Download here](http://hci.rwth-aachen.de/visicut-download)

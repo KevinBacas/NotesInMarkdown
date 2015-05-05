@@ -18,7 +18,7 @@ NFC incorporates a variety of existing standards including **ISO/IEC 14443** bot
 _The NFC Forum_ promotes the potential for _NFC-enabled devices_ to act as electronic identity documents and keycards. As NFC has a short range and supports encryption, it may be more suitable than earlier, less private RFID systems. [More over there..](http://www.ecma-international.org/publications/standards/Ecma-340.htm)
 
 ## Mifare
-**MIFARE** is the **NXP Semiconductors-owned** trademark of a _series of chips widely used in contactless smart cards and _proximity cards_. According to the producers, **10 billion smart card chips** and **150 million reader modules** have been sold. For the variants of MIFARE devices specivications, [check here](http://en.wikipedia.org/wiki/MIFARE#Variants).
+**MIFARE** is the **NXP Semiconductors-owned** trademark of a _series of chips widely used in contactless smart cards and proximity cards_. According to the producers, **10 billion smart card chips** and **150 million reader modules** have been sold. For the variants of MIFARE devices specivications, [check here](http://en.wikipedia.org/wiki/MIFARE#Variants).
 
 ## Sources
 - [Wikipedia NFC](http://en.wikipedia.org/wiki/Near_field_communication)

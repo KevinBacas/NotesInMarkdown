@@ -1,4 +1,4 @@
-# [FabLab] Laser cutting workshop
+# [Laser cutting workshop] Notes
 ## What we'll do ?
 - Theorical part
 - Files

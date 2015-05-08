@@ -1,0 +1,15 @@
+{
+  "name": "NotesInMarkdown",
+    "srcDirectory": "./src",
+    "srcJavascript": "./src/js",
+    "srcCss": "./src/css",
+    "srcData": "./src/data",
+    "testDirectory": "./test",
+    "tgtDirectory": "./build",
+    "installDirectory": "../com/public/widgets",
+  "version": "4.2.0",
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-markdown-pdf": "~3.0.0"
+  }
+}

@@ -42,5 +42,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#PDF
+# PDF
 *.pdf
+
+# Logs
+*.log
+
+# Node modules
+node_modules/*

@@ -13,10 +13,21 @@ module.exports = function(grunt) {
         src: "./MDs/**/*.md",
         dest: "pdf"
       }
-    }
+    },
+    watch: {
+      scripts: {
+        files: ["./MDs/**/*.md"],
+      },
+    },
+  });
+
+  // Watch event
+  grunt.event.on('watch', function(action, filepath, target) {
+    grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
   });
 
   grunt.loadNpmTasks('grunt-markdown-pdf');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['markdownpdf']);
+  grunt.registerTask('default', ['markdownpdf', 'watch']);
 };

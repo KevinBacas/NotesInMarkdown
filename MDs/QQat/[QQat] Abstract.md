@@ -1,4 +1,4 @@
-# [QQQat] Abstract
+# [QQat] Abstract
 ## Goal of the project
 The aim is to build a end-to-end OTR encrypted chat which can be deployed on a personnal server.
 
@@ -41,7 +41,7 @@ The chat will be build on multiple layers :
     - Writing test suite easily
 
 ## DevOps
-A server with [Drone](drone.io) will test the server and the client side on each build as integration test. This server will be connectde to a [GitHub](https://github.com/) which will handle the code. There will be a developpment server on each developper's PC. A single test server and a sigle production server handling a stable version of the software, to demonstrate what QQQCat can do !
+A server with [Drone](drone.io) will test the server and the client side on each build as integration test. This server will be connectde to a [GitHub](https://github.com/) which will handle the code. There will be a developpment server on each developper's PC. A single test server and a sigle production server handling a stable version of the software, to show what QQQCat can do !
 
 ## Under MIT License
 The MIT License (MIT)
@@ -56,3 +56,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contact
 **TODO**
+
+## [TEMP] NPM packages
+
+Package        | Link
+:------------- | :-------------------------------------------
+React          | https://www.npmjs.com/package/react
+Transmission   | https://www.npmjs.com/package/transmission
+CryptoJS       | https://www.npmjs.com/package/crypto-js
+Elliptic       | https://www.npmjs.com/package/elliptic
+RequireJS      | https://www.npmjs.com/package/requirejs
+Sass           | https://www.npmjs.com/package/node-sass
+Bootstrap Sass | https://www.npmjs.com/package/bootstrap-sass
+PhantomJS      | https://www.npmjs.com/package/phantomjs
+QUnit          | https://www.npmjs.com/package/qunit
+JSHint         | https://www.npmjs.com/package/jshint

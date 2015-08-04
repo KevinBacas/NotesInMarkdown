@@ -84,3 +84,12 @@ Le graphe produit `G1 x G2` a pour ensemble de sommets `V1 x V2`. La composition
 - `G` est acyclique et `|V| = |E| + 1`
 - `G` est acyclique et si deux sommets non adjacents de `G` sont reliés par une arête `e`, alors `G | e` a exactement 1 cycle
 - `G` n'est pas `K3 U K1` ni `K3 U K2`, `|V| = |E| + 1` et si deux sommets non adjacents de `G` sont reliés par une arête `e`, alors `G | e` a exactement 1 cycle
+
+### Connexité au sens des sommets et des arêtes
+La connexité de G au sens des sommets K(G) est le nombre minimal de sommets que l'on peut supprimer avant de déconnecter le graphe ou d'obtenir un arbre trivial.<br>La connexité de G au sens des arêtes, alpha(G) est le nomre minimal d'arêtes que l'on peut supprimer de G sans le déconnecter ou obtenir un graphe trivial.
+
+### Théorème de Menger et ses variations
+- Deux chemins de u à v sont dirs disjoints (ou sommet-disjoint) s'ils ne partagent pas d'autres sommets que u et v. Ils sont dits arête disjoints s'ils ne partagent pas d'arête.
+- Un sous graphe S sépare u et v, si u et v sont dans différentes composantes connexes de G - S.
+- Théorème 1 : Le nombre minimum de sommets séparant deux sommets non adjacents s et t est le nombre maximum de chemins disjoints entre s et t.
+- Théorème 2 : Pour tout couple de sommets, le nombre maximum de chemins arête-disjoint joignant ces deux points est égal au nombre minimum d'arêtes que les séparent.

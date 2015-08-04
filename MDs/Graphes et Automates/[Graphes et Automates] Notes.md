@@ -76,3 +76,11 @@ Le graphe produit `G1 x G2` a pour ensemble de sommets `V1 x V2`. La composition
 - _Graphe acyclique_ : Graphe ne possedant pas de cycle.
 - _Arbre_ : Graphe acyclique connexe.
 - Un _graphe acyclique_ non connexe est une forêt. Toute composante connexe d'une forêt est un arbre.
+
+### Caratérisation des arbres
+- G est un arbre
+- Tout couple de sommets de G est lié par un chemin élémentaire unique
+- G est connexe et |V| = |E| + 1
+- G est acyclique et |V| = |E| + 1
+- G est acyclique et si deux sommets non adjacents de G sont reliés par une arête e, alors G | e a exactement un cycle
+- G n'est pas K3 U K1 ni K3 U K2, |V| = |E| + 1 et si deux sommets non adjacents de G sont reliés par une arête e, alors G | e a exactement 1 cycle

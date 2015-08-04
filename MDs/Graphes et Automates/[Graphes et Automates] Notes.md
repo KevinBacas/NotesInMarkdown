@@ -59,3 +59,6 @@ La distance `d(u,v)` entre deux sommets `u` et `v`est définie comme le plus cou
 
 ### Degrés
 Le degré d'un sommet `vi`, noté `di` ou `deg(vi)` correspond au nombre d'arêtes incidentes à `vi`. Le degré minimum d'un graphe `G` est noté `Gamma(G)` et son degré maximum `delta(G)`. Si `Gamma(G) = delta(G) = r`, on dit que le grape est régulier de degré `r`.
+
+### Graphe biparti
+Un _graphe biparti_ est un graphe dont l'ensemble des sommets `V` peut être partitionné en deux sous ensembles `V1` et `V2` tels que toute arête `E` de `G` connecte `V1` à `V2`. Si chaque sommet de `V1` est adjacent à tous les sommets de `V2` et vice versa, on parle alors de _graphe biparti complet_.

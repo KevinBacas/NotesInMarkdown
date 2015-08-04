@@ -69,16 +69,10 @@ Soient `G1` et `G2` deux graphes avec `intersect(V1,V2) = /O`. L'union de `G1` e
 Le graphe produit `G1 x G2` a pour ensemble de sommets `V1 x V2`. La composition de `G1` et `G2`, `G1[G2]` a également `V1 x V2` comme ensemble de sommets, mais `u` est adjacent à `v` si et seulement si `u1v1 € E1` ou `u1 = v1` et `u2v2 € E2`.
 
 ### Définitions
-Point d'articulation : Un sommet dont la suppression modifies le nombre de composantes connexes du graphe.
-
-Pont : Une arête dont la suppression modifies le nombre de composantes connexes du graphe.
-
-Graphe non séparable : Graphe connexe et n'a pas de point d'articulation.
-
-Block : ous graphe non séparable de taille maximale. Si G est non séparable, on dit qu'il est un block.
-
-Graphe acyclique : Graphe ne possedant pas de cycle.
-
-Arbre : Graphe acyclique connexe.
-
-Un graphe acyclique non connexe est une forêt. Toute composante connexe d'une forêt est un arbre.
+- _Point d'articulation_ : Un sommet dont la suppression modifies le nombre de composantes connexes du graphe.
+- _Pont_ : Une arête dont la suppression modifies le nombre de composantes connexes du graphe.
+- _Graphe non séparable_ : Graphe connexe et n'a pas de point d'articulation.
+- _Block_ : ous graphe non séparable de taille maximale. Si G est non séparable, on dit qu'il est un block.
+- _Graphe acyclique_ : Graphe ne possedant pas de cycle.
+- _Arbre_ : Graphe acyclique connexe.
+- Un _graphe acyclique_ non connexe est une forêt. Toute composante connexe d'une forêt est un arbre.

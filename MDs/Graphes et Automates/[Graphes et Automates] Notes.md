@@ -36,7 +36,7 @@ Un sous graphe de `G = (V,E)` est un graphe dont les arêtes et les sommets sont
 
 Un sous graphe recouvrant est un sous graphe de `G` recouvrant tous ses sommets.
 
-### Opération élémentaites sur les graphes
+### Opération élémentaires sur les graphes
 La suppression d'un sommet d'un graphe `G = (V,E)` `G - v` est définie par le sous graphe de `G` définit sur `V - {v}` sommets et possédant toutes les arrêtes `E` à l'exception de celles incidentes à `v`.
 
 La suppression d'une arête `G - e` est définie par le couple `(V, E - {e})`
@@ -62,3 +62,8 @@ Le degré d'un sommet `vi`, noté `di` ou `deg(vi)` correspond au nombre d'arêt
 
 ### Graphe biparti
 Un _graphe biparti_ est un graphe dont l'ensemble des sommets `V` peut être partitionné en deux sous ensembles `V1` et `V2` tels que toute arête `E` de `G` connecte `V1` à `V2`. Si chaque sommet de `V1` est adjacent à tous les sommets de `V2` et vice versa, on parle alors de _graphe biparti complet_.
+
+### Opérations sur les graphes
+Soient `G1` et `G2` deux graphes avec `intersect(V1,V2) = /O`. L'union de `G1` et `G2`, `G1 U G2` est le graphé défini sur `V1 U V2` avec l'ensemble d'arêtes `E1 U E2`. La jointure de `G1` et `G2`, `G1 + G2` est le graphe `G1 U G2` auquel on ajoute l'ensemble des arêtes reliant `V1` à `V2`.
+
+Le graphe produit `G1 x G2` a pour ensemble de sommets `V1 x V2`. La composition de `G1` et `G2`, `G1[G2]` a également `V1 x V2` comme ensemble de sommets, mais `u` est adjacent à `v` si et seulement si `u1v1 € E1` ou `u1 = v1` et `u2v2 € E2`.

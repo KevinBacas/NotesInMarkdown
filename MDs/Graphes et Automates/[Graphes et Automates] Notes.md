@@ -93,3 +93,12 @@ La connexité de G au sens des sommets K(G) est le nombre minimal de sommets que
 - Un sous graphe S sépare u et v, si u et v sont dans différentes composantes connexes de G - S.
 - Théorème 1 : Le nombre minimum de sommets séparant deux sommets non adjacents s et t est le nombre maximum de chemins disjoints entre s et t.
 - Théorème 2 : Pour tout couple de sommets, le nombre maximum de chemins arête-disjoint joignant ces deux points est égal au nombre minimum d'arêtes que les séparent.
+
+## Compilation
+### Analyse lexicale
+Objectifs :
+- Transformation d'un ensemble de caractères en concepts
+- On distingue 3 concepts :
+  - Unité lexicale : correspond à une entité renvoyée par l'analyseur lexical. Ex : <,>,<=,>= sont des opérateurs relationnels
+  - Lexème : Instance d'unité lexicale. Par exemple, 6.28 est une instance d'unité lexicale.
+  - Modèle : associe des lexèmes à leur unité lexicale.

@@ -29,7 +29,7 @@ Un graphe est _labelisé_ lorsque chacun de ces sommets est attaché à une vale
 ### Isomorphisme
 Deux graphes `G1 = (V1,E1)` et `G2 = (V2,E2)` sont dits isomorphes lorsqu'il existe une bijection `f` de `V1` dans `V2` telle que `uv € E1` si et seulement si `f(u)f(v) € E2`.
 
-Un invariant d'un graphe est une quantité qui a la même valeur pour deux graphes isomorphes (ex: Nombre de sommets, d'arêtes, degré des sommets...).
+Un invariant d'un graphe est une quantité qui a la même valeur pour deux graphes isomorphes (ex: Nombre de sommets, d'arêtes, degré des sommets...).
 
 ### Sous graphe
 Un sous graphe de `G = (V,E)` est un graphe dont les arêtes et les sommets sont respectivements inclus dans `V` et `E`. Si `G1` est un sous graphe de `G` alors `G` est un _supergraphe_ de `G1`.

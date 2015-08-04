@@ -42,3 +42,8 @@ La suppression d'un sommet d'un graphe `G = (V,E)` `G - v` est définie par le s
 La suppression d'une arête `G - e` est définie par le couple `(V, E - {e})`
 
 L'addition de l'arête `e` est définie comme le plus petit super graphe de `G` contenant `e`.
+
+### Chemins
+Un chemin est un suite de sommets 2 à 2 adjacents.
+
+Un chemin est _fermé_ si `v0 = vn`. Un chemin _simple_ est un chemin ne passant pas deux fois par la même arête. Un chemin _élémentaire_ est une chemin ne passant pas deux fois par le même sommet (et donc pas la même arête). Un chemin élémentaire fermé avec `n>3` est appelé un _cycle_.

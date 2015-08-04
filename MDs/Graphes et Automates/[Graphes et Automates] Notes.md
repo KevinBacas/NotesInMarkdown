@@ -56,3 +56,6 @@ Un graphe est connexe si toute parie de sommet peut être reliée par un chemin 
 Un graphe complet Kp est le grape de p sommets tous adjacents entre eux.
 
 La distance `d(u,v)` entre deux sommets `u` et `v`est définie comme le plus court chemin joignant `u` et `v` s'il sont connectés. `d(u,v) = Infinity` sinon. La distance ainsi définie est une métrique : `d(u,v) >= 0` avec `d(u,v) = 0` si et seulement si `u = v` et `d(u,v) <= d(u,w) + d(w,v)`
+
+### Degrés
+Le degré d'un sommet `vi`, noté `di` ou `deg(vi)` correspond au nombre d'arêtes incidentes à `vi`. Le degré minimum d'un graphe `G` est noté `Gamma(G)` et son degré maximum `delta(G)`. Si `Gamma(G) = delta(G) = r`, on dit que le grape est régulier de degré `r`.

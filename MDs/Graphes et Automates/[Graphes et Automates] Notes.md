@@ -47,3 +47,12 @@ L'addition de l'arête `e` est définie comme le plus petit super graphe de `G` 
 Un chemin est un suite de sommets 2 à 2 adjacents.
 
 Un chemin est _fermé_ si `v0 = vn`. Un chemin _simple_ est un chemin ne passant pas deux fois par la même arête. Un chemin _élémentaire_ est une chemin ne passant pas deux fois par le même sommet (et donc pas la même arête). Un chemin élémentaire fermé avec `n>3` est appelé un _cycle_.
+
+### Connexité
+Un chemin et un cycle de longueur `n` sont respectivement notés `Pn` et `Cn`.
+
+Un graphe est connexe si toute parie de sommet peut être reliée par un chemin élémentaire. Un sous graphe connexe maximal est appelé une composante connexe.
+
+Un graphe complet Kp est le grape de p sommets tous adjacents entre eux.
+
+La distance `d(u,v)` entre deux sommets `u` et `v`est définie comme le plus court chemin joignant `u` et `v` s'il sont connectés. `d(u,v) = Infinity` sinon. La distance ainsi définie est une métrique : `d(u,v) >= 0` avec `d(u,v) = 0` si et seulement si `u = v` et `d(u,v) <= d(u,w) + d(w,v)`

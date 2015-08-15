@@ -102,3 +102,46 @@ Il ne reste plus qu'à comparer D avec h pour prendre une décision en fonction 
   - Remise en cause des données
   - Remise en cause du modèle
   - prise en compte d'une variable pertinente
+
+# Les modèles explicatifs
+La définition d'un modèle se base du des règles conditionnelles
+
+Les enjeux :
+- Optimisation des stocks
+- Merchandising
+- Identification de facteurs d'un risque
+
+## Algorithme ID3
+Technique de découpage de l'ensemble d'exemples en recherchant à chaque niveau la variable la plus discriminante
+- Extraction automatique des règles
+- Mise en évidence de variables iportantes
+- Formalisme simple
+
+**Metrique de Hamming(hd)** & **Pseudo-distance de hamming (pm)**.
+
+## Réseau Bayésiens
+C'est la définition d'une probabilité d'apparition d'un événement, étant donnée la connaissance de certains autres évènements. C'est un graphe orienté où les noeuds sont des variables et les arcs des dépendances.
+
+### Règle de Bayes
+`P(X/Y) = P(X,Y) / P(Y)`
+
+### Mesure d'entropie
+`H(X) = -SOMME(P(X).log(P(X)))`
+
+### Information mutuelle
+`H(X/Y) = -SOMME(P(X,Y).log(P(X/Y)))`
+
+### Construction du réseau bayésien
+1. Préparation des variables : distinction des variables continues et discrètes et découpage des variables continues.
+2. Sélection des variables (information mutuelle) : distinction des variables d'entrée et de sortie. Une variable de sortie ne peut pas être une variable d'entrée pour une autre.
+3. Identification des dépendances : tri par ordre décroissant des dépendances entre variables
+4. Matrice des probabilités : comptage des occurrences entre les différents noeuds.
+
+## Algorithmes génétiques
+Méthode d'optimisation par un système artificiel s'appuyant sur la théorie de l'évolution de Darwin (1859) et sur les méthodes de combinaison des gènes par Mendel.
+
+### Analogie avec la sélection naturelle dans le monde vivant
+L'évolution dans le monde vivant a permis l'émergence de d'organismes étonnamment adaptés à leurs environnements
+
+### Le point clef
+Le hasard (théorie du chaos) expliquant des variations individuelles

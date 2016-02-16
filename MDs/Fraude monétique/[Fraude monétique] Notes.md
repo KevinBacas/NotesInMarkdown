@@ -15,7 +15,7 @@
   - Les pertes et profits
 
 ### Fraude carte
-- Fraude carte exceptionnelles (62% en volume)
+- Fraude carte exceptionnelle (62% en volume)
 - Fraude carte organisée (38% en volume)
   - MiTM
   - Skimming

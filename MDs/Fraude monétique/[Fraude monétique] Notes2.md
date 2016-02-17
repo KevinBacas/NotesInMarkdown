@@ -34,4 +34,39 @@
 - Scellement : Rendu impossible à la modification invisible
 - Non répudiation : Garantie de participation des partis
 
-/slide 25
+### Paiement à distance par carte (30)
+- Echange sécurisé avec possibilité de répudiation par le porteur (pas d'identification) (SSL, TLS)
+- Paiement par Internet non répudiable (SET puis C-SET, 3D SECURE)
+
+
+
+### PCI (PCI DSS, PCI PED) (60+)
+#### PCI = Payment Card Industry
+- Destiné à déterminer, mettre en place et contrôler les dispositifs de sécurité nécessaires au paiement par carte
+- L'organisation va être confiée à PCIco, Visa, Mastercard, JCB
+
+- PCI-PTS : Payment Terminal Security
+- PCI-DSS : Data Security Standards
+- PCI-PA-DSS : Payment Application Data Security Standards
+- PCI-P2PE : Point-to-Point Encryption
+
+- PCI-PTS + PCI-DSS + PCI-PA-DSS = PCI Security & compliance
+- Terminal + Système accepteur + Système acquéreur
+
+#### PCI-DSS
+- PCI-DSS est une réponse globale à la fraude organisée
+- Contrainte coûteuse sans apport positif pour le commerçant
+- 12 contraintes pour être conforme
+- Réduit le risque de faille de sécurité compromettant les données sensibles ainsi que la fraude nuisible résultant de ces failles
+
+#### PCI-PA-DSS
+- Originellement PABP par Visa
+- A pour but d'aider les fournisseurs de logiciels à développer des applications de paiement sécurisées qui ne mémorisent pa de données interdites
+
+#### PCI-PTS
+- Vise à renforcer la robustesse des terminaux, via des normes sur la sécurité de paiement. S'applique mondialement.
+
+#### PCI-P2PE
+- Chiffrement bout en bout, qui combine des dispositifs de sécurité, d'applications et de processus permettant de chiffrer les données du point d'interaction (ou d'acceptation de la transaction) jusqu'au tiers fournissant le service et l'environnement de déchiffrement.
+
+### La sécurité des systèmes monétiques (92+)

@@ -82,3 +82,9 @@ Mandatée et controlée par les banques pour faire ce qu'une banque ne peut pas 
 
 ### Leur maintenance
 Approche temps réel pour detecter les comportements potentiellement frauduleux. Prise en compte des alertes. Calcul de score en fonction du risque estimé.
+
+### Autorisation EMV
+1. Carte génère ARQC
+2. Emetteur génère ARPC
+
+**Aucun calcul crypto en dehors des dispositifs évalués par les Critères communes avec un niveau EAL 5**

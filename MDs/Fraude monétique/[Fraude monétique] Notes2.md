@@ -35,3 +35,48 @@
 - Non répudiation : Garantie de participation des partis
 
 /slide 25
+
+### Certification des cartes bancaires (slide 33)
+- Emmetteurs doivent utiliser des puces et des logiciels achetés auprès d'encarteurs.
+- Les cartes sont soumises au contrôle d'entités de test
+  - Evaluation de critères communs
+  - Verification de conformité aux standard ISO 7816 et EMV ainsi que CB, Visa, MasterCard
+- Validation des visuels de carte
+- Utilisation de centre de personnalisation agréés par les réseauxx carte
+
+### Les critères communs (slide 34)
+Synthèse des critères à respecter en matière de sécurité pour les SI. Cela concernprincipalement les sous-systèmes (Firewalls, switchs, cartes à puce). C'est l'ISO 15408.
+
+#### Accord CCRA (Common criteria Recognition) (slide 35)
+- 7 pays capables de délivrer des certifications
+  - Allemagne
+  - Australie
+  - Nouvelle-Zélande
+  - Canada
+  - Etats-Unis
+  - France
+  - Grande-Bretagne
+
+#### TOE, PP et ST
+- Partie 1 : Introduction et modèle général
+- Partie 2 : Exigences fonctionnelles de sécurité
+- Partie 3 : Exigences d'assurance de sécurité
+
+- TOE (Target of evaluation) : Designation de l'objet à certifier
+- PP (Protection Profile) : Ensemble type d'exigences de sécurité pour une cartégorie de produits
+- ST (Security Target) : Niveau de sécurité spécifique pour le produit à évaluer
+
+#### Niveaux EAL
+- EAL1 : testé fonctionnellement
+- EAL2 : testé structurellement
+- EAL3 : testé et vérifié méthodiquement
+- EAL4 : conçu, testé et vériﬁé méthodiquement
+- EAL5 : conçu de façon semi-formelle et testé
+- EAL6 : conception vérifiée de façon semi-formelle et testé
+- EAL7 : conception vérifiée de façon formelle et testé
+
+#### Conclusion
+- Les critères communs permettent de caractériser la résistance d'une puce aux attaques connues et même supposées
+- Cette norme ISO 15408 permet aux fondeurs de réaliser des puces résistantes
+- Permet aux emetteurs de vérifier que les puces ne sont pas attaquable dans l'état des connaissances
+- Cette norme qui est acceptée internationalement, l'est aussi pour les "schéma carte"

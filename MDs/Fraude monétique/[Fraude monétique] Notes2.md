@@ -36,7 +36,7 @@
 
 /slide 25
 
-### Certification des cartes bancaires (slide 33)
+### Certification des cartes bancaires
 - Emmetteurs doivent utiliser des puces et des logiciels achetés auprès d'encarteurs.
 - Les cartes sont soumises au contrôle d'entités de test
   - Evaluation de critères communs
@@ -44,10 +44,10 @@
 - Validation des visuels de carte
 - Utilisation de centre de personnalisation agréés par les réseauxx carte
 
-### Les critères communs (slide 34)
+### Les critères communs
 Synthèse des critères à respecter en matière de sécurité pour les SI. Cela concernprincipalement les sous-systèmes (Firewalls, switchs, cartes à puce). C'est l'ISO 15408.
 
-#### Accord CCRA (Common criteria Recognition) (slide 35)
+#### Accord CCRA (Common criteria Recognition)
 - 7 pays capables de délivrer des certifications
   - Allemagne
   - Australie

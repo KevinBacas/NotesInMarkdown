@@ -80,3 +80,28 @@ Synthèse des critères à respecter en matière de sécurité pour les SI. Cela
 - Cette norme ISO 15408 permet aux fondeurs de réaliser des puces résistantes
 - Permet aux emetteurs de vérifier que les puces ne sont pas attaquable dans l'état des connaissances
 - Cette norme qui est acceptée internationalement, l'est aussi pour les "schéma carte"
+
+### L'agrément
+#### EMV
+- Première norme en 1995 (2.0)
+  - 3.0 en 1996
+- Reconnaissance à la conformité délivrée par EMVCo
+  - Suite à des résultats de tests effectués par un laboratoire d'analyse accrédité
+  - Confirmité à deux niveaux
+    - 1 : Couvre les interfaces physiques, electrique et transport
+    - 2 : Convre sélection d'applications de paiement, de crédit et de traitement des transactions financières
+    
+#### L'agrément au réseau carte
+Après EMVCo, le TPE doit être agréé par les réseaux carte qui vérifient le couple matériel/logiciel
+Procédure:
+1. Demande d'agrément
+2. Matériel soumis à un laboratoire habilité pour ces tests
+3. Résultats des tests soumis à CB
+4. Décision transmise à Visa et MasterCard pour validation
+5. Terminal agréé Visa, MasterCard et CB pour la France
+
+#### Remarques
+- L'agrément est un élément incontournable de la sécurité et de la confiance
+- L'agrément assure que les prérequis ont été respectés
+- C'est un élément opposable offrant garantie au commerçant d'être payé
+- C'est la garantie que la matériel ne perturbera pas le fonctionnemetn de l'ensemble du réseau carte

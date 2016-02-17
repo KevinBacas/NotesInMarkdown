@@ -38,7 +38,75 @@
 - Echange sécurisé avec possibilité de répudiation par le porteur (pas d'identification) (SSL, TLS)
 - Paiement par Internet non répudiable (SET puis C-SET, 3D SECURE)
 
+### Certification des cartes bancaires
+- Emmetteurs doivent utiliser des puces et des logiciels achetés auprès d'encarteurs.
+- Les cartes sont soumises au contrôle d'entités de test
+  - Evaluation de critères communs
+  - Verification de conformité aux standard ISO 7816 et EMV ainsi que CB, Visa, MasterCard
+- Validation des visuels de carte
+- Utilisation de centre de personnalisation agréés par les réseauxx carte
 
+### Les critères communs
+Synthèse des critères à respecter en matière de sécurité pour les SI. Cela concernprincipalement les sous-systèmes (Firewalls, switchs, cartes à puce). C'est l'ISO 15408.
+
+#### Accord CCRA (Common criteria Recognition)
+- 7 pays capables de délivrer des certifications
+  - Allemagne
+  - Australie
+  - Nouvelle-Zélande
+  - Canada
+  - Etats-Unis
+  - France
+  - Grande-Bretagne
+
+#### TOE, PP et ST
+- Partie 1 : Introduction et modèle général
+- Partie 2 : Exigences fonctionnelles de sécurité
+- Partie 3 : Exigences d'assurance de sécurité
+
+- TOE (Target of evaluation) : Designation de l'objet à certifier
+- PP (Protection Profile) : Ensemble type d'exigences de sécurité pour une cartégorie de produits
+- ST (Security Target) : Niveau de sécurité spécifique pour le produit à évaluer
+
+#### Niveaux EAL
+- EAL1 : testé fonctionnellement
+- EAL2 : testé structurellement
+- EAL3 : testé et vérifié méthodiquement
+- EAL4 : conçu, testé et vériﬁé méthodiquement
+- EAL5 : conçu de façon semi-formelle et testé
+- EAL6 : conception vérifiée de façon semi-formelle et testé
+- EAL7 : conception vérifiée de façon formelle et testé
+
+#### Conclusion
+- Les critères communs permettent de caractériser la résistance d'une puce aux attaques connues et même supposées
+- Cette norme ISO 15408 permet aux fondeurs de réaliser des puces résistantes
+- Permet aux emetteurs de vérifier que les puces ne sont pas attaquable dans l'état des connaissances
+- Cette norme qui est acceptée internationalement, l'est aussi pour les "schéma carte"
+
+### L'agrément
+#### EMV
+- Première norme en 1995 (2.0)
+  - 3.0 en 1996
+- Reconnaissance à la conformité délivrée par EMVCo
+  - Suite à des résultats de tests effectués par un laboratoire d'analyse accrédité
+  - Confirmité à deux niveaux
+    - 1 : Couvre les interfaces physiques, electrique et transport
+    - 2 : Convre sélection d'applications de paiement, de crédit et de traitement des transactions financières
+
+#### L'agrément au réseau carte
+Après EMVCo, le TPE doit être agréé par les réseaux carte qui vérifient le couple matériel/logiciel
+Procédure:
+1. Demande d'agrément
+2. Matériel soumis à un laboratoire habilité pour ces tests
+3. Résultats des tests soumis à CB
+4. Décision transmise à Visa et MasterCard pour validation
+5. Terminal agréé Visa, MasterCard et CB pour la France
+
+#### Remarques
+- L'agrément est un élément incontournable de la sécurité et de la confiance
+- L'agrément assure que les prérequis ont été respectés
+- C'est un élément opposable offrant garantie au commerçant d'être payé
+- C'est la garantie que la matériel ne perturbera pas le fonctionnemetn de l'ensemble du réseau carte
 
 ### PCI (PCI DSS, PCI PED) (60+)
 #### PCI = Payment Card Industry

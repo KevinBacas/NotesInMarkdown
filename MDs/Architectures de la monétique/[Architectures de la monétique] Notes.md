@@ -83,5 +83,20 @@ Vers une interbancarité unique : SEPA (Single Euro Payements Area).
 ## Commissionnement
 * Pour les paiements les commissions d’interchange sont payées par l’acquéreur à l’émetteur
 * Pour les retraits la commission d’interchange est payée par l’émetteur à l’acquéreur
+* Un transactio coûte plus cher à l'emetteur qu'à l'acquéreur car :
+  * Coûts de processing
+  * Débits différés clients
+  * Garantie de paiment (fraude + coût du crédit)
+* Le marchand est gagnant
 
+### CIP (Commission Interbancaire de Paiement)
+* Versée par la banque Acquéreur à la banque porteur
+* < 0.28%
 
+## Conclusion
+* Le SEPA permet de nouvelles solutions de paiement
+* Les solutions qui ne sont pas portée par un ou plusieurs "Card Scheme" ont une forte probabilité de disparaître
+* m-payment en EU pas aussi prometteur qu'en Afrique
+* La sécurité est au coeur de tous ces dispositifs
+* L'avenir du Bitcoin dépend de l'adoption de cette monnaie par les utilisateur
+  * Pour le moment, très faible part du marché

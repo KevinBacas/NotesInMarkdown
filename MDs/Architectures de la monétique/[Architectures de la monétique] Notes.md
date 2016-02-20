@@ -80,4 +80,8 @@ Vers une interbancarité unique : SEPA (Single Euro Payements Area).
   * Etablissement de Paiment (EP)
   * Emetteur de Monnaie Electronique (EME)
 
+## Commissionnement
+* Pour les paiements les commissions d’interchange sont payées par l’acquéreur à l’émetteur
+* Pour les retraits la commission d’interchange est payée par l’émetteur à l’acquéreur
+
 

@@ -132,4 +132,13 @@ Initialement développé par Phillips et Sony. Cela à donné Mifare et FeliCa.
 * Protège des attaque provenant de l'OS enrichi
 * Contrôle des droits d'accès + hébergement d'application sensibles
 
+### Le Secure Element (SE)
+* 3 architectures :
+  * La SIM
+  * Composant interne
+  * Carte SD
 
+### Groupe P€GASUS
+* Elaborer et tester une solution commune de paiement mobile sans-contact
+* 7 Banques françaises
+* 3 opérateurs historiques

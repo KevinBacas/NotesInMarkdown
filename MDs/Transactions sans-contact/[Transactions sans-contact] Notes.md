@@ -99,3 +99,37 @@ Initialement développé par Phillips et Sony. Cela à donné Mifare et FeliCa.
 * Propose une SmartCard API
 * Premettre l'accès à tout tupe de SE
 
+## M-Payment
+* Paiement de proximité
+  * Le mobile est perçu comme une carte ou un Terminal de paiement
+* Paiement à distance
+  * Domestic P2P transfers
+  * Transfers au-delà des frontières
+    * 482 milliards en 2011
+    * Migrants
+    * Essentiellement dédié à tous les pays très peu bancarisés
+
+### Les méthodes de paiement
+* La facture postpayée
+* Le compte prépayé
+* Le débit direct
+* La carte de crédit
+* Le porte-monnaie réseau
+* Le porte-monnaie terminal
+
+### Les méthodes d'initialisation du paiement
+* WAP / I-Mode (quasi abandonnés)
+* SMS
+* Internet
+* Serveur Vocal Interactif (SVI)
+* Unstructured Supplementary Service Data (USSD)
+* NFC
+* QRCode
+* Ondes sonores
+
+### Trusted Exectution Envirionment (TTE)
+* Assemblage de matériel et de logiciel
+* Protège des attaque provenant de l'OS enrichi
+* Contrôle des droits d'accès + hébergement d'application sensibles
+
+

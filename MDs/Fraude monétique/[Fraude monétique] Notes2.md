@@ -137,4 +137,32 @@ Procédure:
 #### PCI-P2PE
 - Chiffrement bout en bout, qui combine des dispositifs de sécurité, d'applications et de processus permettant de chiffrer les données du point d'interaction (ou d'acceptation de la transaction) jusqu'au tiers fournissant le service et l'environnement de déchiffrement.
 
-### La sécurité des systèmes monétiques (92+)
+### La sécurité des systèmes monétiques
+- Les fichiers des transactions, réalisée par le CMI, sont envoyés chaque jour aux différentes Banques
+  - Autorisations données
+  - Transaction réalisées
+- Analyse de ces fichiers par les banques
+  - Recherche de fraude
+  - Préparation des réponses pour les porteurs ou les commerçants
+  - Rechercher les POC
+- La banque doit permettre à au moins 2 de ses employés de se former en permanance à la fraude
+- En particulier :
+  - Plan de gestion de crise
+  - Participer à la mise en place et du fonctionnement de réunions pays et sous régionales
+  - Effectuer veille stratégique sur l'évolution des fraudes cartes
+  - Se préparer à répondre aux demandes de l'audit interne à la banque
+  - Pousser le CMI à se doter d'outils adaptés à la lutte contre la fraude
+
+#### Modèle de Reason
+- Est util pour analyser la sécurité globale d'un système
+- N'est qu'une partie de l'analyse
+- N'est souvent utilisable qu'à posteriori de l'incident
+- Propriétés :
+  - Chaque couche créée est opérée par des aprtenaires différents
+  - Ces règles évolues en fonction de différents processus
+  - Les tranches de fromages bougent séparément
+  - Parfois, les trous s'alignent 
+
+#### Evolution de la Fraude
+- *Vente à distance* = 70% de la fraude notamment à cause d'internet.
+
